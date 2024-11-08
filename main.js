@@ -6,3 +6,8 @@ import "./style.css";
 //   <img src="${javascriptLogo}" alt="JavaScript Logo" />
 //   <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded">Submit</button>
 // `;
+const themeToggler = document.querySelector("#theme-toggler");
+
+themeToggler.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark");
+});
